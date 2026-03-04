@@ -1,1 +1,25 @@
-REPLACE_WITH_FULL_CSS
+/* OpenAgent Portal - Demo Styles (MIT) */
+
+:root {
+  --brand-primary: #0d6efd;
+}
+
+.navbar-brand i { opacity: 0.9; }
+
+#app .card-kpi {
+  border-left: 4px solid var(--brand-primary);
+}
+
+.table-actions .btn {
+  padding: .15rem .4rem;
+  font-size: .85rem;
+}
+
+/* Utility */
+.cursor-pointer { cursor: pointer; }
+
+/* Dark-mode tweaks - handled by Bootstrap 5.3 data-bs-theme attr, this adds minor extras */
+[data-bs-theme="dark"] .card,
+[data-bs-theme="dark"] .modal-content {
+  border-color: rgba(255,255,255,0.08);
+}
